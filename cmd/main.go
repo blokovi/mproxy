@@ -91,8 +91,8 @@ func main() {
 	go proxyHTTP(cfg, logger, h, errs)
 
 	// MQTT
-	logger.Info(fmt.Sprintf("Starting MQTT proxy on port %s ", cfg.mqttPort))
-	go proxyMQTT(cfg, logger, h, errs)
+	// logger.Info(fmt.Sprintf("Starting MQTT proxy on port %s ", cfg.mqttPort))
+	// go proxyMQTT(cfg, logger, h, errs)
 
 	// MQTTS
 	logger.Info(fmt.Sprintf("Starting MQTTS proxy on port %s ", cfg.mqttsPort))
